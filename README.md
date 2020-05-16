@@ -1,5 +1,5 @@
 # SiteScript
-A language that makes JavaScript sane for web-development. Written in Python.
+A language that makes JavaScript sane for web-development. Written in C++.
 
 File Extensions: `.ss`, `.sitescript`, `.site`, `.notjs`
 
