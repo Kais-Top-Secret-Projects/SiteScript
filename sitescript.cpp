@@ -2,8 +2,21 @@
 #include <fstream>
 using namespace std;
 
-int siteScriptCompile(void){
-    cout << "success!" << endl;
+int siteScriptCompile(string fileName){
+    // Open Files
+    ifstream siteScript;
+    siteScript.open(fileName);
+
+    ofstream javaScript;
+    javaScript.open ("output.js");
+    // Lexer/Parser
+
+
+    // Translator
+
+
+    // Close file
+    siteScript.close();
 }
 
 bool hasEnding (string const &fullString, string const &ending) {
@@ -27,7 +40,7 @@ int main( int argc, char *argv[] ){
             cout << "ERROR: Invalid file name!" << endl <<
             "File Extension: .ss" << endl;
         } else {
-            siteScriptCompile();   
+            siteScriptCompile(argv[1]);   
         }
     }
 }
