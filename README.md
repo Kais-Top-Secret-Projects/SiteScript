@@ -1,7 +1,7 @@
 # SiteScript
 A language that makes JavaScript sane for web-development. Written in C++.
 
-File Extensions: `.ss`, `.sitescript`, `.site`, `.notjs`
+File Extensions: `.ss`
 
 ## About SiteScript
 SiteScript is a learning experience by translating one language to another. The goal is to change the syntax of JavaScript - whether for better or for worse. SiteScript is not advanced, with the main goal to inlcude basic JavaScript functions for the web.
