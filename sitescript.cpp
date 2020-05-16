@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <algorithm>
 using namespace std;
 
 int siteScriptCompile(string fileName){
@@ -9,8 +10,24 @@ int siteScriptCompile(string fileName){
 
     ofstream javaScript;
     javaScript.open ("output.js");
-    // Lexer/Parser
 
+    // Lexer/Parser
+    if(siteScript.is_open()){
+        string line;
+        while(getline(siteScript, line)){
+            // Check for comment
+            if (!line.find("//")){
+                line = "";
+            }
+            // check for empty lines
+            if (line.size() == 0){
+                // This does nothing, I will figure out why it does nothing later.
+                line.erase(remove(line.begin(), line.end(), '\n'), line.end());
+            }
+
+            cout << line <<  endl;
+        }
+    }
 
     // Translator
 
